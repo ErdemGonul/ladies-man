@@ -35,7 +35,7 @@ let deathcause='';
 const possible = "ASDQWERTFGYHUJ";
 const textsingame = [
     'LADIES MAN',
-    'Space To Start',
+    'SPACE TO START',
     'WP COWBOY',
     'BAD COMBO',
     'ZOMBIE GOT YOU',
@@ -158,7 +158,7 @@ function toLoseScreen(){
 background.onload = function () {
   spriteback.render();
   drawText(textsingame[0], 4,40,40,colors[0],0);
-  drawText(textsingame[6],2,60,100,colors[1],0);
+  drawText(textsingame[1],2,70,100,colors[1],0);
 }
 
 //Game Loop 
@@ -195,11 +195,11 @@ let loop = kontra.gameLoop({
       }
       //if lady's x-position reaches player YOU GOT SCORE
       else if(element.x<45 && element.name=='lady'){
-      element.x=xofgirlspositionposition;
+      element.x=xofgirlsposition;
       element.dx=0;
       score++;
       girls.push(element);
-      xofgirlspositionposition-=10;
+      xofgirlsposition-=10;
       sequencegotscore.play();
       //game get harder in every 5 score
       if(score>0 && score%5==0)

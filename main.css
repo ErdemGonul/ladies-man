@@ -5,13 +5,11 @@ html, body {
 h1,h2,h3,h4,h5,h6{
     color: white;
 }
+#canvas-wrap { 
+    margin-top:80px;
+}
 canvas{
     width:600px;
     height:450px;
 }
-#canvas-wrap { 
-    position:relative;
-    margin-left: 25%;
-    margin-top:120px;
-    margin-right: 25%;
-}
+
