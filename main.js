@@ -202,8 +202,8 @@ let loop = kontra.gameLoop({
       xofgirlsposition-=10;
       sequencegotscore.play();
       //game get harder in every 5 score
-      if(score>0 && score%5==0)
-        spawnTime=(spawnTime*90)/100;
+      if(score>0 && score%3==0)
+        spawnTime=(spawnTime*80)/100;
         
       }
 
