@@ -203,7 +203,7 @@ let loop = kontra.gameLoop({
       sequencegotscore.play();
       //game get harder in every 5 score
       if(score>0 && score%3==0)
-        spawnTime=(spawnTime*80)/100;
+        spawnTime=parseInt((spawnTime*80)/100);
         
       }
 

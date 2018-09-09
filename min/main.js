@@ -14,7 +14,7 @@ if(Math.random()>0.3)
 createEnemy();else createGirl()}
 enemies.forEach(element=>{if(element.x<45&&element.name=='enemy'){deathcause=textsingame[4];loser=!0;sequencelose.play()}
 else if(element.x<45&&element.name=='lady'){element.x=xofgirlsposition;element.dx=0;score++;girls.push(element);xofgirlsposition-=10;sequencegotscore.play();if(score>0&&score%3==0)
-spawnTime=(spawnTime*80)/100}
+spawnTime=parseInt((spawnTime*80)/100);}
 if(element.x<45)
 enemies.shift()});if(currentKey!=null&&charStr!=null&&charCode!=32){if(charStr.toLowerCase()==currentKey.toLowerCase()){sequencecombo.play();if(keyindex==2&&currentCombo.charAt(2)==currentKey){if(enemies[0].image==ladyimg){deathcause=textsingame[5];loser=!0;sequencelose.play()}
 else{enemies.shift();sequencekill.play();currentKey=null;currentCombo=RandomChar();keyindex=0;currentKey=currentCombo.charAt(0);colorsofcombopixels=[colors[2],colors[2],colors[2]];warning=textsingame[2]}}
