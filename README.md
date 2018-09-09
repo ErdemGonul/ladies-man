@@ -1,5 +1,6 @@
 # Ladies Man
 
+Game can be played on here : [Demo Link](https://js13kgames.com/games/ladies-man/index.html)
 
 ### HTML5 Game for [JS13K Games Competition](https://js13kgames.com)
 <img src="/screenshot.png"/>
